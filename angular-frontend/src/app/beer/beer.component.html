@@ -1,0 +1,14 @@
+<div id="bigbox"> 
+    <h3 class = "text-center">Beer viewer</h3>
+    <div id="box">
+        <div id="column" class="column" *ngFor = "let beer of beers">
+        
+            <div id="picture">
+                <img *ngIf="!beer.clicked" (click)="onClick(beer)"  src="assets/beer.png" alt="Beer" style="width: 80%;">
+                <p *ngIf="beer.clicked" (click)="onClick(beer)"  >{{beer.description}}</p>
+            </div>
+            <p>{{beer.name}}</p>
+        
+        </div>
+    </div>
+</div>

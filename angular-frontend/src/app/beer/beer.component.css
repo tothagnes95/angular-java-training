@@ -1,0 +1,23 @@
+#bigbox {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    padding: 20px;
+}
+#box {
+    display: flex;
+    text-align: center;
+}
+#column {
+    width: 200px;
+    margin: auto;
+}
+#picture {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
