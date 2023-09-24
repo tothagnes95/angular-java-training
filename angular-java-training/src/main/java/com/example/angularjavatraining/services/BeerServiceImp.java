@@ -17,4 +17,8 @@ public class BeerServiceImp implements BeerService{
   public List<Beer> findAllBeer(){
     return beerRepository.findAll();
   }
+
+  public void save(Beer beer){
+    beerRepository.save(beer);
+  }
 }
