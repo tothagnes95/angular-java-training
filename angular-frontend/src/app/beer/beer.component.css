@@ -1,5 +1,5 @@
 #bigbox {
-    width: 80%;
+    width: 900px;
     text-align: center;
     margin: auto;
     margin-top: 20px;
@@ -15,9 +15,19 @@
 #column {
     width: 200px;
     margin: auto;
+    height: 350px;
 }
 #picture {
     width: 200px;
-    height: 200px;
-    margin: 10px;
+    height: 300px;
+    padding-top: auto;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    justify-content: center;
+}
+p {
+    justify-content: center;
+    text-align: center;
 }

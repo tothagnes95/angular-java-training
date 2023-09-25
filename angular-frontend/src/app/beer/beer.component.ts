@@ -10,7 +10,7 @@ import { Beer } from '../beer';
 export class BeerComponent implements OnInit{
 
    beers: Beer[];
-   
+   p: number = 1;
 
   constructor(private beerService: BeerService){}
 

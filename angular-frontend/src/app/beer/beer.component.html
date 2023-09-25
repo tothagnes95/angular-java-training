@@ -1,14 +1,15 @@
 <div id="bigbox"> 
     <h3 class = "text-center">Beer viewer</h3>
-    <div id="box">
-        <div id="column" class="column" *ngFor = "let beer of beers">
+    <div id="box" class="row">
+        <div id="column" class="column" *ngFor = "let beer of beers | paginate: { itemsPerPage: 6, currentPage: p }" class="col-md-4">
         
             <div id="picture">
-                <img *ngIf="!beer.clicked" (click)="onClick(beer)"  src="assets/beer.png" alt="Beer" style="width: 80%;">
+                <img *ngIf="!beer.clicked" (click)="onClick(beer)"  src="assets/beer.png" alt="Beer" style="width: 100%;">
                 <p *ngIf="beer.clicked" (click)="onClick(beer)"  >{{beer.description}}</p>
             </div>
             <p>{{beer.name}}</p>
         
         </div>
     </div>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
 </div>
